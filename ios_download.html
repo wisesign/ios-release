@@ -22,10 +22,10 @@
 .CCBOX{text-align:center;}
 </style>
 <script>
-window.onload=function(){
-	var Cbtn = document.querySelector('.Cbtn')
-	Cbtn.onclick=function(){
-		alert("请在手机上使用浏览器打开本页面，即可安装");
+	window.onload=function(){
+		var Cbtn = document.querySelector('.Cbtn')
+		Cbtn.onclick=function(){
+			window.location.href='itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/wisesign/ios-release/master/x5.plist';
 		}
 	}
 </script>
@@ -43,7 +43,9 @@ window.onload=function(){
 			<img src="img/120" class="Cimg">
 		</div>
 		-->
-		<div class="container CCBOX"><a href="#" class="Cbtn" onclick=""><img src="img/dl.png">点击安装</a></div>
+		<div class="container CCBOX">
+			<a href="#" class="Cbtn" onclick="">点击安装</a>
+		</div>
 	</div>
 </body>
 </html>

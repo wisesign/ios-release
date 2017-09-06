@@ -1,24 +1,49 @@
-
-<!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->  
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!doctype html>
+<html>
 <head>
-    <title>�ƶ���ά</title>
-        <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>	
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
+<title>移动运维</title>
+
+<style type="text/css">
+.Cbox{height: 77px;
+		background-color: #fafafa;
+		border-bottom: 1px solid #eee;
+	text-align: center;
+}
+.Tt{font-size: 22px; 
+	font-family: NotoSansHans-Regular,AvenirNext-Regular,proxima-nova,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Open Sans","Helvetica Neue",Arial,sans-serif;
+	line-height: 77px; clear: both;margin-bottom: 60px; color: #666;}
+.Cimg{margin:0 auto; display: block;width: 120px; height: 120px; border: 1px solid #ddd; clear: both;border-radius: 24px;margin-bottom: 40px;}
+.Cbtn{margin: 0 auto;display:inline-block; padding:15px 25px;background-color: #1abc9c; font-size: 18px; color: #fff; text-align: center; outline: none; text-decoration: none;}
+.Cbtn:hover , .Cbtn:visited,.Cbtn:focus{color:#fff;opacity: 0.9; text-decoration: none;outline:none;}
+.Cbtn img{margin:5px;}
+.CCBOX{text-align:center;}
+</style>
+<script>
+window.onload=function(){
+	var Cbtn = document.querySelector('.Cbtn')
+	Cbtn.onclick=function(){
+		alert("请在手机上使用浏览器打开本页面，即可安装");
+		}
+	}
+</script>
+</head>
 
 <body>
-
-
- <div style="line-height:100px; text-align:center;">
-   <a href="javascript:void(0);" 
-	onclick="window.location.href='itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/wisesign/ios-release/master/x5.plist'" 
-		   id="down_load"  > down_load IPA </a>
- </div>     
-
-      
+	<div class="Cbox">
+		<div class="container ">
+			<div class="pull-middle Tt">移动运维</div>
+			
+			
+		</div>
+		<!--
+		<div class="container">
+			<img src="img/120" class="Cimg">
+		</div>
+		-->
+		<div class="container CCBOX"><a href="#" class="Cbtn" onclick=""><img src="img/dl.png">点击安装</a></div>
+	</div>
 </body>
 </html>
